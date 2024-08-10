@@ -1,4 +1,8 @@
-import React from 'react'
+"use client";
+
+import React from 'react';
+import Slider from 'react-slick';
+import Slide from './Slide';
 
 const Hero = () => {
 
@@ -27,7 +31,7 @@ const Hero = () => {
             price: "$15", 
         },
         {
-            id: 1,
+            id: 2,
             img: "/coverphoto2.png",
             title: "Bio Spray Plus",
             mainTitle: "Bio Spray Plus",
@@ -37,9 +41,22 @@ const Hero = () => {
 
   return (
     <div>
-      Hero
+      <div className="container pt-6 lg:pt-0">
+        <Slider {...setting}>
+          {
+            slideData.map((item) => (
+              <Slide
+                key={item.id}
+                img={item.img}
+                title={item.title}
+                mainTitle={item.mainTitle}
+                price={item.price}
+              />
+            ))}
+        </Slider>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
