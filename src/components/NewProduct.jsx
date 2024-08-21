@@ -7,14 +7,14 @@ const productsData = [
     img: "/picture1.jpg",
     title:"Bio Spray Plus",
     desc: "Bio Spray Plus Colostrum Liquid",
-    rating: 4,
+    rating: 5,
     price: "45.00",
   },
   {
     img: "/picture1.jpg",
     title:"Bio Spray Plus",
     desc: "Bio Spray Plus Colostrum Liquid",
-    rating: 5,
+    rating: 4,
     price: "35.00",
   },
   {
