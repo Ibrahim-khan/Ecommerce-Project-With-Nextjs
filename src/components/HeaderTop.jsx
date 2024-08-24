@@ -9,10 +9,14 @@ const HeaderTop = () => {
         <div className="flex justify-between items-center">
           <div className="hidden lg:flex gap-1">
             <div className="header_top__icon_wrapper">
-              <FaFacebook />
+              <a href="https://www.facebook.com/BioSpray.Official.page" target="_blank" rel="noopener noreferrer">
+                <FaFacebook />
+              </a>
             </div>
             <div className="header_top__icon_wrapper">
-              <FaYoutube />
+              <a href="https://www.youtube.com/@BioSprayPlusColostrumLiquid/videos" target="_blank" rel="noopener noreferrer">
+                <FaYoutube />
+              </a>
             </div>
             <div className="header_top__icon_wrapper">
               <FaLinkedin />
@@ -23,20 +27,10 @@ const HeaderTop = () => {
           </div>
 
           <div className="text-gray-500 text-[12px]">
-            <b>FREE SHIPPING</b> THIS WEEK ORDER OVER - $55
+            <b>নোটিশ:</b> অরিজিনাল বায়ো স্প্রে প্লাস কিনতে সরাসরি অফিসে যোগাযোগ করুন। অনলাইনে পণ্য কিনে প্রতারিত হবেন না। বিস্তারিতঃ 01742 095 986
           </div>
 
           <div className="flex gap-4">
-            <select
-              className="text-gray-500 text-[12px] w-[70px]"
-              name = "currency"
-              id = "currency"
-            >
-              <option value="USD $">USD $</option>
-              <option value="EUR">EUR</option>
-              <option value="TK">TK</option>
-            </select>
-
             <select
               className="text-gray-500 text-[12px] w-[80px]"
               name="language"
@@ -46,6 +40,7 @@ const HeaderTop = () => {
               <option value="Bangla">Bangla</option>
             </select>
           </div>
+          
         </div>
       </div>
     </div>
